@@ -11,7 +11,7 @@ import YandexMapsMobile
 
 class AppDelegate: NSObject, UIApplicationDelegate {
     
-    let MAPKIT_API_KEY = "36166b39-3afa-4b8a-a095-ffe92b8b0c55"
+    let MAPKIT_API_KEY = "key"
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         print("App Did Launch!")
