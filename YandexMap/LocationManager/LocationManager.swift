@@ -11,16 +11,12 @@ import YandexMapsMobile
 import Combine
 
 
-/*
- LocationManager будет отвечать за всю логику взаимодействия с картами, объявим в нем саму карту и приватную переменную manager, которая наследуется от класса CLLocationManager, для работы с местоположением пользователя
- 
- */
-
 class LocationManager: NSObject, ObservableObject {
     let INITIAL_LOCATION = YMKPoint(latitude: 55.7558, longitude: 37.6173)
     private let manager = CLLocationManager()
     @Published var lastUserLocation: CLLocation? = nil
     @Published var authorizationStatus: CLAuthorizationStatus = CLAuthorizationStatus.notDetermined
+    @Published var showAlert: Bool = false
     
     static let shared = LocationManager()
     
@@ -35,6 +31,7 @@ class LocationManager: NSObject, ObservableObject {
         manager.delegate = self
         manager.desiredAccuracy = kCLLocationAccuracyBest
         manager.startUpdatingLocation()
+        getAuthorizationStatus()
         centerMapLocation(target: INITIAL_LOCATION, map: mapView, zoom: 10)
     }
     
@@ -42,10 +39,12 @@ class LocationManager: NSObject, ObservableObject {
         manager.requestWhenInUseAuthorization()
     }
     
-    func getAuthorizationStatus() {
+    private func getAuthorizationStatus() {
         let status = manager.authorizationStatus
-        authorizationStatus = status
-        print("authorizationStatus: \(status.self)")
+        print("lm => authorizationStatus: \(status.self)")
+        if status != CLAuthorizationStatus.authorizedWhenInUse {
+            showAlert = true
+        }
     }
     
     func centerMapLocation(target location: YMKPoint?, map: YMKMapView, zoom: Float) {
@@ -77,14 +76,19 @@ extension LocationManager: CLLocationManagerDelegate {
         switch status {
         case .notDetermined:
             print("Debug: not determined")
+            authorizationStatus = .notDetermined
         case .restricted:
             print("Debug: restricted")
+            authorizationStatus = .restricted
         case .denied:
             print("Debug: denied...")
+            authorizationStatus = .denied
         case .authorizedAlways:
             print("Debug: authorizedAlways")
+            authorizationStatus = .authorizedAlways
         case .authorizedWhenInUse:
             print("Debug: authorizedWhenInUse")
+            authorizationStatus  = .authorizedWhenInUse
             self.manager.startUpdatingLocation()
         @unknown default:
             break

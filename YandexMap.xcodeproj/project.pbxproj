@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		BBEBD754BCD677993F19C8E9 /* Pods_YandexMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 262D24E17BD877CADEBC2134 /* Pods_YandexMap.framework */; };
+		D74FA1172A1CBD3B00A69FFE /* DialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74FA1162A1CBD3B00A69FFE /* DialogView.swift */; };
+		D74FA11A2A1CBD8A00A69FFE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D74FA1192A1CBD8A00A69FFE /* Localizable.strings */; };
+		D74FA11D2A1CBE2E00A69FFE /* LocalizationStringKey+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74FA11C2A1CBE2E00A69FFE /* LocalizationStringKey+Extension.swift */; };
+		D74FA1212A1CBE8800A69FFE /* StringManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74FA1202A1CBE8800A69FFE /* StringManager.swift */; };
+		D74FA1242A1CBF2D00A69FFE /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74FA1232A1CBF2D00A69FFE /* BaseButton.swift */; };
+		D74FA1262A1CBFDA00A69FFE /* BaseButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74FA1252A1CBFDA00A69FFE /* BaseButtonStyle.swift */; };
+		D74FA1282A1CC37A00A69FFE /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74FA1272A1CC37A00A69FFE /* Color+Extension.swift */; };
 		D7E8353F2A1BD6AF00A19383 /* YandexMapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E8353E2A1BD6AF00A19383 /* YandexMapApp.swift */; };
 		D7E835412A1BD6AF00A19383 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E835402A1BD6AF00A19383 /* MapView.swift */; };
 		D7E835432A1BD6B100A19383 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7E835422A1BD6B100A19383 /* Assets.xcassets */; };
@@ -21,6 +28,13 @@
 /* Begin PBXFileReference section */
 		262D24E17BD877CADEBC2134 /* Pods_YandexMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YandexMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87E15B7E063C8C3D456B41E0 /* Pods-YandexMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YandexMap.debug.xcconfig"; path = "Target Support Files/Pods-YandexMap/Pods-YandexMap.debug.xcconfig"; sourceTree = "<group>"; };
+		D74FA1162A1CBD3B00A69FFE /* DialogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogView.swift; sourceTree = "<group>"; };
+		D74FA1192A1CBD8A00A69FFE /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		D74FA11C2A1CBE2E00A69FFE /* LocalizationStringKey+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocalizationStringKey+Extension.swift"; sourceTree = "<group>"; };
+		D74FA1202A1CBE8800A69FFE /* StringManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringManager.swift; sourceTree = "<group>"; };
+		D74FA1232A1CBF2D00A69FFE /* BaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
+		D74FA1252A1CBFDA00A69FFE /* BaseButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButtonStyle.swift; sourceTree = "<group>"; };
+		D74FA1272A1CC37A00A69FFE /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		D7E8353B2A1BD6AF00A19383 /* YandexMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YandexMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7E8353E2A1BD6AF00A19383 /* YandexMapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YandexMapApp.swift; sourceTree = "<group>"; };
 		D7E835402A1BD6AF00A19383 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
@@ -62,6 +76,77 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D74FA1132A1CBCB200A69FFE /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D7E8353E2A1BD6AF00A19383 /* YandexMapApp.swift */,
+				D7E8354E2A1BDA7200A19383 /* AppDelegate.swift */,
+				D7E835502A1BDAF900A19383 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D74FA1142A1CBCBB00A69FFE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D7E835402A1BD6AF00A19383 /* MapView.swift */,
+				D7E835542A1BDEC100A19383 /* YandexMapView.swift */,
+				D74FA1162A1CBD3B00A69FFE /* DialogView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D74FA1152A1CBCE800A69FFE /* LocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				D7E835522A1BDD3D00A19383 /* LocationManager.swift */,
+			);
+			path = LocationManager;
+			sourceTree = "<group>";
+		};
+		D74FA1182A1CBD7200A69FFE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D74FA1192A1CBD8A00A69FFE /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D74FA11B2A1CBDF000A69FFE /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				D74FA11F2A1CBE7200A69FFE /* Enum */,
+				D74FA11E2A1CBE5E00A69FFE /* Extentions */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		D74FA11E2A1CBE5E00A69FFE /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				D74FA11C2A1CBE2E00A69FFE /* LocalizationStringKey+Extension.swift */,
+				D74FA1272A1CC37A00A69FFE /* Color+Extension.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		D74FA11F2A1CBE7200A69FFE /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				D74FA1202A1CBE8800A69FFE /* StringManager.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		D74FA1222A1CBF1A00A69FFE /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D74FA1232A1CBF2D00A69FFE /* BaseButton.swift */,
+				D74FA1252A1CBFDA00A69FFE /* BaseButtonStyle.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		D7E835322A1BD6AF00A19383 = {
 			isa = PBXGroup;
 			children = (
@@ -83,14 +168,14 @@
 		D7E8353D2A1BD6AF00A19383 /* YandexMap */ = {
 			isa = PBXGroup;
 			children = (
-				D7E8353E2A1BD6AF00A19383 /* YandexMapApp.swift */,
-				D7E835402A1BD6AF00A19383 /* MapView.swift */,
+				D74FA1132A1CBCB200A69FFE /* App */,
+				D74FA1222A1CBF1A00A69FFE /* Components */,
+				D74FA11B2A1CBDF000A69FFE /* Support */,
+				D74FA1182A1CBD7200A69FFE /* Resources */,
+				D74FA1152A1CBCE800A69FFE /* LocationManager */,
+				D74FA1142A1CBCBB00A69FFE /* Views */,
 				D7E835422A1BD6B100A19383 /* Assets.xcassets */,
 				D7E835442A1BD6B100A19383 /* Preview Content */,
-				D7E8354E2A1BDA7200A19383 /* AppDelegate.swift */,
-				D7E835502A1BDAF900A19383 /* SceneDelegate.swift */,
-				D7E835522A1BDD3D00A19383 /* LocationManager.swift */,
-				D7E835542A1BDEC100A19383 /* YandexMapView.swift */,
 			);
 			path = YandexMap;
 			sourceTree = "<group>";
@@ -164,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7E835462A1BD6B100A19383 /* Preview Assets.xcassets in Resources */,
+				D74FA11A2A1CBD8A00A69FFE /* Localizable.strings in Resources */,
 				D7E835432A1BD6B100A19383 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,11 +304,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7E8354F2A1BDA7200A19383 /* AppDelegate.swift in Sources */,
+				D74FA11D2A1CBE2E00A69FFE /* LocalizationStringKey+Extension.swift in Sources */,
 				D7E835412A1BD6AF00A19383 /* MapView.swift in Sources */,
+				D74FA1212A1CBE8800A69FFE /* StringManager.swift in Sources */,
 				D7E835552A1BDEC100A19383 /* YandexMapView.swift in Sources */,
 				D7E835532A1BDD3D00A19383 /* LocationManager.swift in Sources */,
+				D74FA1242A1CBF2D00A69FFE /* BaseButton.swift in Sources */,
+				D74FA1282A1CC37A00A69FFE /* Color+Extension.swift in Sources */,
+				D74FA1262A1CBFDA00A69FFE /* BaseButtonStyle.swift in Sources */,
 				D7E8353F2A1BD6AF00A19383 /* YandexMapApp.swift in Sources */,
 				D7E835512A1BDAF900A19383 /* SceneDelegate.swift in Sources */,
+				D74FA1172A1CBD3B00A69FFE /* DialogView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
