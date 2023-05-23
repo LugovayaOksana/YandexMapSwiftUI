@@ -7,18 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BBEBD754BCD677993F19C8E9 /* Pods_YandexMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 262D24E17BD877CADEBC2134 /* Pods_YandexMap.framework */; };
 		D7E8353F2A1BD6AF00A19383 /* YandexMapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E8353E2A1BD6AF00A19383 /* YandexMapApp.swift */; };
-		D7E835412A1BD6AF00A19383 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E835402A1BD6AF00A19383 /* ContentView.swift */; };
+		D7E835412A1BD6AF00A19383 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E835402A1BD6AF00A19383 /* MapView.swift */; };
 		D7E835432A1BD6B100A19383 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7E835422A1BD6B100A19383 /* Assets.xcassets */; };
 		D7E835462A1BD6B100A19383 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7E835452A1BD6B100A19383 /* Preview Assets.xcassets */; };
+		D7E8354F2A1BDA7200A19383 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E8354E2A1BDA7200A19383 /* AppDelegate.swift */; };
+		D7E835512A1BDAF900A19383 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E835502A1BDAF900A19383 /* SceneDelegate.swift */; };
+		D7E835532A1BDD3D00A19383 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E835522A1BDD3D00A19383 /* LocationManager.swift */; };
+		D7E835552A1BDEC100A19383 /* YandexMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E835542A1BDEC100A19383 /* YandexMapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		262D24E17BD877CADEBC2134 /* Pods_YandexMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YandexMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87E15B7E063C8C3D456B41E0 /* Pods-YandexMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YandexMap.debug.xcconfig"; path = "Target Support Files/Pods-YandexMap/Pods-YandexMap.debug.xcconfig"; sourceTree = "<group>"; };
 		D7E8353B2A1BD6AF00A19383 /* YandexMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YandexMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7E8353E2A1BD6AF00A19383 /* YandexMapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YandexMapApp.swift; sourceTree = "<group>"; };
-		D7E835402A1BD6AF00A19383 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D7E835402A1BD6AF00A19383 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		D7E835422A1BD6B100A19383 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7E835452A1BD6B100A19383 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D7E8354E2A1BDA7200A19383 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D7E835502A1BDAF900A19383 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D7E835522A1BDD3D00A19383 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		D7E835542A1BDEC100A19383 /* YandexMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YandexMapView.swift; sourceTree = "<group>"; };
+		E2226FB1FD7BD3271C19C457 /* Pods-YandexMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YandexMap.release.xcconfig"; path = "Target Support Files/Pods-YandexMap/Pods-YandexMap.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +38,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBEBD754BCD677993F19C8E9 /* Pods_YandexMap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9158557588AB626CED106D4D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				87E15B7E063C8C3D456B41E0 /* Pods-YandexMap.debug.xcconfig */,
+				E2226FB1FD7BD3271C19C457 /* Pods-YandexMap.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C1AC1DD5AD56A02728E421A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				262D24E17BD877CADEBC2134 /* Pods_YandexMap.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D7E835322A1BD6AF00A19383 = {
 			isa = PBXGroup;
 			children = (
 				D7E8353D2A1BD6AF00A19383 /* YandexMap */,
 				D7E8353C2A1BD6AF00A19383 /* Products */,
+				9158557588AB626CED106D4D /* Pods */,
+				C1AC1DD5AD56A02728E421A4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,9 +84,13 @@
 			isa = PBXGroup;
 			children = (
 				D7E8353E2A1BD6AF00A19383 /* YandexMapApp.swift */,
-				D7E835402A1BD6AF00A19383 /* ContentView.swift */,
+				D7E835402A1BD6AF00A19383 /* MapView.swift */,
 				D7E835422A1BD6B100A19383 /* Assets.xcassets */,
 				D7E835442A1BD6B100A19383 /* Preview Content */,
+				D7E8354E2A1BDA7200A19383 /* AppDelegate.swift */,
+				D7E835502A1BDAF900A19383 /* SceneDelegate.swift */,
+				D7E835522A1BDD3D00A19383 /* LocationManager.swift */,
+				D7E835542A1BDEC100A19383 /* YandexMapView.swift */,
 			);
 			path = YandexMap;
 			sourceTree = "<group>";
@@ -74,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D7E835492A1BD6B100A19383 /* Build configuration list for PBXNativeTarget "YandexMap" */;
 			buildPhases = (
+				3F620C366B3F5A89ED081680 /* [CP] Check Pods Manifest.lock */,
 				D7E835372A1BD6AF00A19383 /* Sources */,
 				D7E835382A1BD6AF00A19383 /* Frameworks */,
 				D7E835392A1BD6AF00A19383 /* Resources */,
+				A87DC076E3012B6400A6CFC7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,13 +170,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3F620C366B3F5A89ED081680 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YandexMap-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A87DC076E3012B6400A6CFC7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YandexMap/Pods-YandexMap-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YandexMap/Pods-YandexMap-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YandexMap/Pods-YandexMap-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D7E835372A1BD6AF00A19383 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7E835412A1BD6AF00A19383 /* ContentView.swift in Sources */,
+				D7E8354F2A1BDA7200A19383 /* AppDelegate.swift in Sources */,
+				D7E835412A1BD6AF00A19383 /* MapView.swift in Sources */,
+				D7E835552A1BDEC100A19383 /* YandexMapView.swift in Sources */,
+				D7E835532A1BDD3D00A19383 /* LocationManager.swift in Sources */,
 				D7E8353F2A1BD6AF00A19383 /* YandexMapApp.swift in Sources */,
+				D7E835512A1BDAF900A19383 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +345,7 @@
 		};
 		D7E8354A2A1BD6B100A19383 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87E15B7E063C8C3D456B41E0 /* Pods-YandexMap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -270,11 +355,14 @@
 				DEVELOPMENT_TEAM = VQD3WHNZZ2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This demo displays user location arrow";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This demo displays user location arrow";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -290,6 +378,7 @@
 		};
 		D7E8354B2A1BD6B100A19383 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2226FB1FD7BD3271C19C457 /* Pods-YandexMap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -299,11 +388,14 @@
 				DEVELOPMENT_TEAM = VQD3WHNZZ2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This demo displays user location arrow";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This demo displays user location arrow";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
